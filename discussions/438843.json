@@ -1,0 +1,10 @@
+[
+  {
+    "Id": "1024464",
+    "ThreadId": "438843",
+    "Html": "There's a NuGet dependency in the samples on  Ix_Experimental-Main\r<br />\n<br />\nbut when I try to install it, I get:\r<br />\n<br />\nPM&gt; Install-Package Ix_Experimental-Main\r<br />\nInstall-Package : Unable to find package 'Ix_Experimental-Main'.\r<br />\nAt line:1 char:1<br />\n<ul>\n<li>Install-Package Ix_Experimental-Main</li>\n<li>\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br />\n<ul>\n<li>CategoryInfo          : NotSpecified: (:) [Install-Package], InvalidOperationException</li>\n<li>\nFullyQualifiedErrorId : NuGetCmdletUnhandledException,NuGet.PowerShell.Commands.InstallPackageCommand<br />\n</li>\n</ul>\n</li>\n</ul>\nThus no System.Interactive and no  EnumerableEx<br />\n",
+    "PostedDate": "2013-04-02T13:01:36.27-07:00",
+    "UserRole": null,
+    "MarkedAsAnswerDate": null
+  }
+]

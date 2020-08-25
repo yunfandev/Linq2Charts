@@ -1,0 +1,10 @@
+<div class="wikidoc">Here is an example of using LINQ with the chart controls:<br /><br /><div style="color:Black;background-color:White;"><pre>
+<span style="color:Blue;">var</span> pixels = ColorPoint.Pixels(image);
+
+<span style="color:Blue;">var</span> copy = <span style="color:Blue;">from</span> pixel <span style="color:Blue;">in</span> pixels
+                 <span style="color:Blue;">let</span> y = <span style="color:Blue;">new</span> System.Linq.Charting.Point.DataPoint(image.Height - pixel.Y) { Color = pixel.Color }
+                 <span style="color:Blue;">let</span> x = pixel.X + 1
+                 <span style="color:Blue;">select</span> KeyValuePair.Create(x, y);
+
+<span style="color:Blue;">var</span> pixelated = <span style="color:Blue;">new</span> System.Linq.Charting.Point { Points = { copy } };
+</pre></div> <br />There are more examples in the <b>Samples</b> directory.</div><div class="ClearBoth"></div>
